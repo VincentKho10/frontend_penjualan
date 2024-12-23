@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="login-register col">
+      <div class="tab row">
+        <button class="loginform_label">LOGIN</button>
+        <button class="registerform_label">REGISTER</button>
+      </div>
+
+      <div class="content row">
+        <form class="loginform col">
+          <input type="text" name="username" id="login_username" placeholder="username"/>
+          <input type="password" name="password" id="login_password" placeholder="password"/>
+          <button onclick="handleLogin()">LOGIN</button>
+        </form>
+        <form class="registerform col hide">
+          <input type="text" name="username" id="register_username" placeholder="username"/>
+          <input type="password" name="password" id="register_password" placeholder="password"/>
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm password"/>
+          <button onclick="handleRegister()">REGISTER</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
